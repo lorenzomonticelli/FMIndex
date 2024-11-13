@@ -2,7 +2,7 @@
 
 ## Overview
 `FMIndex` is a Python tool designed to build FM Index components from a DNA sequence, stored in a FASTA format file.
-The **FM Index** is a space-efficient data structure, designed for searching a specific substring within large texts, making it highly applicable in genomics for DNA sequence analysis. The different components that constitute it allow for efficient pattern matching, by supporting backward searching, where queries go across the index from the pattern's end. Additionally, the FM Index can be compressed, in order to reduce storage space. (Ferragina and Manzini, 2000), (Langmead, 2013)
+The **FM Index** is a space-efficient data structure, designed for searching a specific substring within large texts, making it highly applicable in genomics for DNA sequence analysis. The different components that constitute it allow for efficient pattern matching, by supporting backward searching, where queries go across the index from the pattern's end. Additionally, the FM Index can be compressed, in order to reduce storage space (Ferragina and Manzini, 2000), (Langmead, 2013).
 The **different components** of the tool are:
 - Burrows-Wheeler Transform (BWT)
 - Suffix Array
@@ -16,7 +16,10 @@ The **different components** of the tool are:
 - **Run-Length Encoding (RLE)**: Optional compression for BWT to save storage space.
 
 ## Requirements
-- Python 3.6 or higher.
+- Python 3.6 or higher
+- sys
+- os
+- argparse
 
 ## Installation
 Clone this repository:
